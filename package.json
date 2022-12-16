@@ -1,0 +1,27 @@
+{
+  "name": "golobe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielOmehe/Golobe-Travel-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielOmehe/Golobe-Travel-App/issues"
+  },
+  "homepage": "https://github.com/DanielOmehe/Golobe-Travel-App#readme",
+  "dependencies": {
+    "next": "^13.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.5"
+  }
+}
