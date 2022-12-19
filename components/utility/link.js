@@ -1,9 +1,9 @@
 import { Fragment } from "react"
 
-const LinkComponent = ({variant, url, children})=>{
+const LinkComponent = ({variant, url, open, children})=>{
         return (
             <Fragment>
-                <a className={variant} href={url}> {children} </a>
+                <a className={variant} onClick={open} href={url}> {children} </a>
 
                 <style jsx> {`
                     a{
@@ -24,6 +24,11 @@ const LinkComponent = ({variant, url, children})=>{
                         align-items: center;
                         justify-content: center;
                         font-size: 14px;
+                    }
+                    .booking-link{
+                        color: black;
+                        font-size: 14px;
+                        font-weight: 500;
                     }
                 `} </style>
             </Fragment>

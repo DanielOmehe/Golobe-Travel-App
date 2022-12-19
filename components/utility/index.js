@@ -4,3 +4,7 @@ export {default as Find} from './find';
 export {default as NavBar} from './navbar'
 export {default as Header} from './header';
 export {default as Link} from './link'
+export {default as Text} from './text'
+export {default as Button} from './button'
+export {default as Cities} from './cities'
+export {default as Footer} from './footer'

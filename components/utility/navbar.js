@@ -35,9 +35,6 @@ const NavBarComponent = ({variant})=>{
                 .landing-page-nav{
                     height: 96px;
                     width: 100%;
-                    left: 30px;
-                    top: 30px;
-                    border-radius: 0px;
                     padding: 24px 32px 24px 32px;
                     justify-content: space-between;
                     display: flex;
@@ -55,9 +52,6 @@ const NavBarComponent = ({variant})=>{
                 .booking{
                     height: 24px;
                     width: 242px;
-                    left: 0px;
-                    top: 6px;
-                    border-radius: 0px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;

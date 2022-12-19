@@ -1,13 +1,17 @@
 import { Fragment } from "react";
-import { NavBar } from ".";
+import { NavBar, Text } from ".";
 
-const HeaderComponent = ({variant, image})=>{
+const HeaderComponent = ({variant, container, row})=>{
     return(
         <Fragment>
             <header className={variant}>
                 <NavBar variant='landing-page-nav' />
-                <div className="container">
-                    <div className="row"></div>
+                <div className={container}>
+                    <div className={row}>
+                        <Text variant='helping' > Helping Others </Text>
+                        <Text variant='live' > LIVE & TRAVEL </Text>
+                        <Text variant='offers' > Special Offers to suit Your plan </Text>
+                    </div>
                 </div>
             </header>
             <style jsx> {`
@@ -17,6 +21,18 @@ const HeaderComponent = ({variant, image})=>{
                 background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(/images/background.png) no-repeat;
                 background-size: cover;
                 background-position: center;
+            }
+            .landing-page-container{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .landing-page-row{
+                height: 202px;
+                width: 753px;
+                text-align: center;
             }
             `} </style>
         </Fragment>
