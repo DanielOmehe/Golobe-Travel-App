@@ -1,10 +1,10 @@
 import { Fragment } from "react"
 
-const ButtonComponent = ({ variant, children })=>{
+const ButtonComponent = ({ variant, onClick, children })=>{
 
     return(
         <Fragment>
-            <button className={variant}> {children} </button>
+            <button className={variant} onClick={onClick} > {children} </button>
 
             <style jsx> {`
             .places-button{
@@ -26,6 +26,14 @@ const ButtonComponent = ({ variant, children })=>{
                 width: 80px;
                 border: 1px solid #3EB489;
                 background: transparent;
+                border-radius: 5px;
+            }
+            .newsletter-btn{
+                height: 56px;
+                width: 104px;
+                color: #fff;
+                background: #056608;
+                border: 1px solid #056608;
                 border-radius: 5px;
             }
             `} </style>

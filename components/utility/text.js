@@ -119,6 +119,26 @@ const TextComponent = ({variant, open, grow, children})=>{
             .google-text{
                 margin-left: 8px;
             }
+            .newsletter-heading{
+                height: 108px;
+                width: 364px;
+                border: 1px solid black;
+                font-size: 44px;
+                font-weight: 600;
+                margin-bottom: 24px;
+            }
+            .newsletter-sub-heading{
+                height: 25px;
+                width: 117px;
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+            .newsletter-text{
+                height: 20px;
+                width: 592px;
+                border: 1px solid black;
+            }
             `} </style>
         </Fragment>
     )

@@ -63,6 +63,7 @@ const MainComponent = ({variant})=>{
                 background: #ededed;
                 position: relative;
                 padding-top: 263px;
+                padding-bottom: 200px;
             }
             `} </style>
         </Fragment>

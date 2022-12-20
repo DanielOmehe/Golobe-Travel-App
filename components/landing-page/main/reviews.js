@@ -94,6 +94,7 @@ const ReviewComponent = ({reviews})=>{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                margin-bottom: 200px;
             }
             .review-container{
                 height: 608px;
