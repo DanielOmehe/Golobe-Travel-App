@@ -11,6 +11,8 @@ const InputComponent = ({type, variant, text})=>{
                 border: none;
                 outline: none;
                 background: #fff;
+                padding-left: 20px;
+                font-size: 18px;
             }
             `} </style>
         </Fragment>

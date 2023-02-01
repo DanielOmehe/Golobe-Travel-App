@@ -1,8 +1,11 @@
 import { Fragment } from 'react'
-import { Button, Cities, Text } from '../../utility'
+import Button from '../../utility/button'
+import Cities from '../../utility/cities'
+import Text from '../../utility/text'
+import { cities } from '../../data/cities'
 
 const places = ['flights', 'hotels', 'resorts']
-const PlacesComponent = ({})=>{
+const Places = ({})=>{
     return(
         <Fragment>
             <div className='places'>
@@ -14,29 +17,7 @@ const PlacesComponent = ({})=>{
                     <Button variant='places-button'> See more places </Button>
                 </div>
                 <div className='places-row'>
-                    <Cities 
-                    bookings={places}
-                    cities={[
-                        {
-                            city: 'Istanbul',
-                            image: '/images/istanbul.png',
-                            country: 'Turkey',
-                            id: 1
-                        },
-                        {
-                            city: 'Sydney',
-                            image: '/images/sydney.png',
-                            country: 'Australia',
-                            id: 2
-                        },
-                        {
-                            city: 'Baku',
-                            image: '/images/baku.png',
-                            country: 'Azerbaijan',
-                            id: 3
-                        },
-                    ]}
-                    />
+                    <Cities bookings={places} cities={cities} />
                 </div>
                 <div className='places-row'>
                     <Cities 
@@ -121,4 +102,4 @@ const PlacesComponent = ({})=>{
 
 }
 
-export default PlacesComponent
+export default Places

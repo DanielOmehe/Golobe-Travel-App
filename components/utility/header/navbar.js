@@ -1,22 +1,22 @@
 import { Fragment } from "react"
-import { Airplane, Bed } from "../icons"
-import { Find, Link } from "."
-import { Logo } from "."
-const NavBarComponent = ({variant})=>{
+import Find from "../find"
+import Link from "./link"
+import Logo from '../logo'
+const NavBar = ({variant})=>{
     return(
         <Fragment>
             <nav className={variant}>
                 <div className="frame">
                 <div className="booking">
                         <Find variant='flights' >
-                            <Airplane />
+                            <img src='/images/airplane.svg' alt="airplane" />
                             <Link
                             url='/flights'
                             variant='flight'
                             > Find Flights </Link>
                         </Find>            
                         <Find variant='hotels'>
-                            <Bed />
+                            <img src="/images/bed.svg"  alt="bed"/>
                             <Link
                             url='/hotels'
                             variant='hotel'
@@ -69,4 +69,4 @@ const NavBarComponent = ({variant})=>{
     )
 }
 
-export default NavBarComponent
+export default NavBar

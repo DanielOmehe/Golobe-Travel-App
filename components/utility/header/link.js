@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 
-const LinkComponent = ({variant, url, open, children})=>{
+const Link = ({variant, url, open, children})=>{
         return (
             <Fragment>
                 <a className={variant} onClick={open} href={url}> {children} </a>
@@ -35,4 +35,4 @@ const LinkComponent = ({variant, url, open, children})=>{
         )
 }
 
-export default LinkComponent
+export default Link

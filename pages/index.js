@@ -1,6 +1,7 @@
 import { Fragment } from "react";
-import { Main } from "../components/landing-page/main";
-import { Footer, Header } from "../components/utility";
+import Footer  from '../components/utility/footer/footer'
+import Header from "../components/utility/header/header";
+import Main from "../components/landing-page/main/main";
 
 const Index = ()=>{
     return (

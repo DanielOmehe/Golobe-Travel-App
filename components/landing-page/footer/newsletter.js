@@ -1,6 +1,7 @@
 import { Fragment } from "react"
 import { Input } from "."
-import { Text, Button } from '../../utility'
+import Button from "../../utility/button"
+import Text from "../../utility/text"
 
 const NewsLetter = ({})=>{
     return(
@@ -24,13 +25,11 @@ const NewsLetter = ({})=>{
                 top: 0px;
                 border-radius: 0px;
                 padding: 24px 0px 24px 0px;
-                justify: space-between;
-                border: 1px solid black;                
+                justify: space-between;               
             }
             .newsletter-title{
                 height: 125px;
                 width: 593px;
-                border: 1px solid black;
             }
             .newsletter-form{
                 height: 56px;
@@ -38,7 +37,6 @@ const NewsLetter = ({})=>{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                border: 1px solid black;
             }
             `} </style>
         </Fragment>

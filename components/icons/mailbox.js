@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const SvgComponent = (props) => (
+const MailBox = (props) => (
   <svg
     width="1em"
     height="1em"
@@ -50,4 +50,4 @@ const SvgComponent = (props) => (
   </svg>
 )
 
-export default SvgComponent
+export default MailBox

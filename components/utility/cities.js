@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Text } from ".";
+import Text from "./text";
 
 const CitiesComponent = ({cities, bookings})=>{
     return(

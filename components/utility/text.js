@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react"
 
-const TextComponent = ({variant, open, grow, children})=>{
+const Text = ({variant, open, grow, children})=>{
     return (
         <Fragment>
             <p onClick={grow} className={variant}> {children} </p>
@@ -122,7 +122,6 @@ const TextComponent = ({variant, open, grow, children})=>{
             .newsletter-heading{
                 height: 108px;
                 width: 364px;
-                border: 1px solid black;
                 font-size: 44px;
                 font-weight: 600;
                 margin-bottom: 24px;
@@ -137,11 +136,10 @@ const TextComponent = ({variant, open, grow, children})=>{
             .newsletter-text{
                 height: 20px;
                 width: 592px;
-                border: 1px solid black;
             }
             `} </style>
         </Fragment>
     )
 }
 
-export default TextComponent
+export default Text

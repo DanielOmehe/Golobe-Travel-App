@@ -1,14 +1,16 @@
 import { Fragment } from 'react';
-import { Button, Link, Text } from '../../utility';
+import Button from '../../utility/button'
+import Text from '../../utility/text'
+import Link from '../../utility/header/link'
 
-const BookingComponent = ({bookings})=>{
+const Booking = ({bookings})=>{
     return(
         <Fragment>
             <div className='bookings' >
                 {
-                    bookings.map(({image, title, subtitle, text, url, id}) => {
+                    bookings.map(({image, title, subtitle, text, url}) => {
                         return(
-                            <div key={id} className='booking' >
+                            <div key={title} className='booking' >
                                 <img src={image} alt='bookings' />
                                 <div className='text-title'>
                                     <Text variant='booking-title'> {title} </Text>
@@ -51,4 +53,4 @@ const BookingComponent = ({bookings})=>{
     )
 }
 
-export default BookingComponent
+export default Booking

@@ -1,7 +1,8 @@
 import { Fragment } from "react";
-import { NavBar, Text } from ".";
+import NavBar from './navbar'
+import Text from "../text";
 
-const HeaderComponent = ({variant, container, row})=>{
+const Header = ({variant, container, row})=>{
     return(
         <Fragment>
             <header className={variant}>
@@ -39,4 +40,4 @@ const HeaderComponent = ({variant, container, row})=>{
     )
 }
 
-export default HeaderComponent
+export default Header

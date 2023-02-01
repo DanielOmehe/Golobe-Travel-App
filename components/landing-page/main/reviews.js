@@ -1,8 +1,9 @@
 import { Fragment } from 'react'
 import { useState } from 'react'
-import { Button, Link, Text } from '../../utility'
+import Button from '../../utility/button'
+import Text from '../../utility/text'
 
-const ReviewComponent = ({reviews})=>{
+const Reviews = ({reviews})=>{
     const [state, setstate] = useState(false);
 
     const spread = ()=>{
@@ -62,9 +63,6 @@ const ReviewComponent = ({reviews})=>{
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='shadow' >
-                                        <img src='/images/shadow.png' alt='shadow' />
-                                    </div>
                                 </div>
                             )
                         })
@@ -113,6 +111,7 @@ const ReviewComponent = ({reviews})=>{
                 top: 0;
                 left: 0;
                 z-index: 1;
+                box-shadow: 26px 26px 2px rgba(141, 211, 187, 0.4);
             }
             .review-title{
                 height: 296px;
@@ -151,15 +150,9 @@ const ReviewComponent = ({reviews})=>{
                 margin-top: 40px;
                 width: 100%;
             }
-            .shadow{
-                position: absolute;
-                top: 20px;
-                left: 20px;
-                z-index: 0;
-            }
             `} </style>
         </Fragment>
     )
 }
 
-export default ReviewComponent
+export default Reviews
