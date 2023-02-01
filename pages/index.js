@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Footer  from '../components/utility/footer/footer'
+import Footer  from '../components/landing-page/footer/footer'
 import Header from "../components/utility/header/header";
 import Main from "../components/landing-page/main/main";
 

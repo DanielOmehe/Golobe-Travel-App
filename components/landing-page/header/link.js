@@ -4,7 +4,6 @@ const Link = ({variant, url, open, children})=>{
         return (
             <Fragment>
                 <a className={variant} onClick={open} href={url}> {children} </a>
-
                 <style jsx> {`
                     a{
                         font-size: 14px;

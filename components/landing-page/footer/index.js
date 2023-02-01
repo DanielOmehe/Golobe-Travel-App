@@ -1,2 +1,7 @@
-export {default as Input} from './input';
-export {default as newsLetter} from './newsletter';
+const FooterComponent = ()=>{
+    return(
+
+    )
+}
+
+export default FooterComponent

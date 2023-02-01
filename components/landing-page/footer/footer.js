@@ -1,37 +1,20 @@
-import NewsLetter from "../../landing-page/footer/newsletter"
+import NewsLetter from "./newsletter/form"
 import { Fragment } from 'react';
 import Icons from "./icons";
 import { icons } from "../../data/icons";
+import { Facebook, Instagram, Twitter, YouTube } from "../../icons";
+import Logo from "./logo";
+import Navigations from "./navigations/navigations";
 
-const Footer = ()=>{
+const Footer = ({variant, children})=>{
     return(
         <Fragment>
             <footer className="footer">
-                <div className="newsLetter">
                     <NewsLetter />
-                    <div className="mailbox">
-                        <img src="/images/mailbox.svg" alt="Mailbox" />
-                    </div>
-                </div>
                 <div className="footer-row">
-                    <div className="icons-container">
-                        <img src="/images/Logo.png" className="logo" alt='Logo'/>
-                        <Icons variant='landing-page-icons'>
-                            {
-                                icons.map(({icon, text})=>{
-                                    return(
-                                        <img src={icon} alt={text} key={text} />
-                                    )
-                                })
-                            }
-                        </Icons>
-                    </div>
+                    <Logo />
                     <div className="footer-navigations">
-                            <div className="navigation"></div>
-                            <div className="navigation"></div>
-                            <div className="navigation"></div>
-                            <div className="navigation"></div>
-                            <div className="navigation"></div>
+                        <Navigations />
                     </div>
                 </div>
             </footer>

@@ -1,9 +1,9 @@
 import { Fragment } from "react"
-import { Input } from "."
-import Button from "../../utility/button"
-import Text from "../../utility/text"
+import { Input } from ".."
+import Button from "../../../utility/button"
+import Text from "../../../utility/text"
 
-const NewsLetter = ({})=>{
+const Form = ({})=>{
     return(
         <Fragment>
             <div className="newsletter">
@@ -43,4 +43,4 @@ const NewsLetter = ({})=>{
     )
 }
 
-export default NewsLetter
+export default Form

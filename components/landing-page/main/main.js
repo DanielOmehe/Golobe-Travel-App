@@ -1,17 +1,8 @@
-import { Fragment } from 'react'
-import Booking from './booking'
-import Places from './places'
-import Reviews from './reviews'
-import { reviews } from '../../data/reviews'
-import { bookings } from '../../data/booking'
-
-const Main = ({variant})=>{
+const Main = ({variant, children})=>{
     return(
-        <Fragment>
+        <>
             <main className={variant} >
-                <Places />
-                <Booking bookings={bookings}/>
-                <Reviews reviews={reviews}/>
+                {children}
             </main>
             <style jsx> {`
             .landing-page-main{
@@ -21,7 +12,7 @@ const Main = ({variant})=>{
                 padding-bottom: 200px;
             }
             `} </style>
-        </Fragment>
+        </>
     )
 }
 
