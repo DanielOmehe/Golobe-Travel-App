@@ -1,12 +1,12 @@
 import Form from "./form"
 import NewsLetterComponent from "./newsletter"
-import { MailBox } from "../../../icons"
+import Mailbox from './mailbox';
 
 const NewsLetter = ()=>{
     return(
         <NewsLetterComponent>
             <Form />
-            <MailBox />
+            <Mailbox />
         </NewsLetterComponent>
     )
 } 

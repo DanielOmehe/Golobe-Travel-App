@@ -1,6 +1,6 @@
 import Link from "./link"
 
-const Navigations = ({variant, children, links })=>{
+const Navigations = ({ children, links })=>{
     return (
         <>
             <div className="navigation">

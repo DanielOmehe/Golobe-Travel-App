@@ -1,23 +1,7 @@
-import NewsLetter from "./newsletter/form"
-import { Fragment } from 'react';
-import Icons from "./icons";
-import { icons } from "../../data/icons";
-import { Facebook, Instagram, Twitter, YouTube } from "../../icons";
-import Logo from "./logo";
-import Navigations from "./navigations/navigations";
-
-const Footer = ({variant, children})=>{
+const Footer = ({children})=>{
     return(
-        <Fragment>
-            <footer className="footer">
-                    <NewsLetter />
-                <div className="footer-row">
-                    <Logo />
-                    <div className="footer-navigations">
-                        <Navigations />
-                    </div>
-                </div>
-            </footer>
+        <>
+            <footer className="footer"> {children} </footer>
             <style jsx> {`
                 .footer{
                     height: 373px;
@@ -74,7 +58,7 @@ const Footer = ({variant, children})=>{
                     border: 1px solid white;
                 }
             `} </style>
-        </Fragment>
+        </>
     )
 }
 

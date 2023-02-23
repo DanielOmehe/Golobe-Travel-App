@@ -5,9 +5,12 @@ import Text from '../../utility/text'
 
 const Reviews = ({reviews})=>{
     const [state, setstate] = useState(false);
+    const [active, setActive] = useState(reviews[0].key)
 
-    const spread = ()=>{
-        setstate((prevState) => !prevState)
+    const onclickhandler = (key)=>{
+        setstate((prevstate)=>!prevstate)
+        setActive(key)
+        console.log(active)
     }
     return(
         <Fragment>
@@ -28,16 +31,16 @@ const Reviews = ({reviews})=>{
                             name,
                             studio,
                             location,
-                            id
+                            key
                         }) => {
                             return(
-                                <div key={id} className='review-container'>
+                                <div key={key} className='review-container'>
                                     <div className='review'>
                                         <div className='review-title'>
                                             <Text variant='review-heading'> {heading} </Text>
                                             <div className='sub-title'>
                                                 <Text open={state} variant='review-sub-heading'> {subheading} </Text>
-                                                <Text variant='viewmore' open={state} grow={spread}> view more </Text>
+                                                <Text variant='viewmore' key={key} open={state} onclick={onclickhandler} > view more </Text>
                                             </div>
                                             <div className='more-reviews'>
                                                 <div className='stars'>

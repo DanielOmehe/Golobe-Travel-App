@@ -1,20 +1,19 @@
-import { Fragment } from "react"
-import { Input } from ".."
-import Button from "../../../utility/button"
-import Text from "../../../utility/text"
+import Input from "./input"
+import Button from "../../utility/button"
+import Text from "../../utility/text"
 
-const Form = ({})=>{
+const Form = ()=>{
     return(
-        <Fragment>
+        <>
             <div className="newsletter">
                 <Text variant='newsletter-heading'>Subscribe NewsLetter</Text>
                 <div className="newsletter-title">
                     <Text variant='newsletter-sub-heading'>The Travel</Text>
                     <Text variant='newsletter-text' >Get inspired! Receive travel discounts, tips and behind the scenes stories.</Text>
-                <form className="newsletter-form">
-                    <Input type='email' variant='newsletter-email' text='Your email address'/>
-                    <Button variant='newsletter-btn' >Subscribe</Button>
-                </form>
+                    <form className="newsletter-form">
+                        <Input type='email' variant='newsletter-email' text='Your email address'/>
+                        <Button variant='newsletter-btn' >Subscribe</Button>
+                    </form>
                 </div>
             </div>
             <style jsx> {`
@@ -39,7 +38,7 @@ const Form = ({})=>{
                 justify-content: space-between;
             }
             `} </style>
-        </Fragment>
+        </>
     )
 }
 

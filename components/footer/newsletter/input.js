@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 
-const InputComponent = ({type, variant, text})=>{
+const Input = ({type, variant, text})=>{
     return(
         <Fragment>
             <input type={type} className={variant} placeholder={text} />
@@ -19,4 +19,4 @@ const InputComponent = ({type, variant, text})=>{
     )
 }
 
-export default InputComponent
+export default Input

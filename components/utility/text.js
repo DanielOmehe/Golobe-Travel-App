@@ -1,9 +1,7 @@
-import { Fragment, useState } from "react"
-
-const Text = ({variant, open, grow, children})=>{
+const Text = ({variant, key, open, onclick=()=>{}, children})=>{
     return (
-        <Fragment>
-            <p onClick={grow} className={variant}> {children} </p>
+        <>
+            <p onClick={()=>onclick(key)} className={variant}> {children} </p>
             <style jsx> {`
             .helping{
                 height: 57px;
@@ -136,9 +134,10 @@ const Text = ({variant, open, grow, children})=>{
             .newsletter-text{
                 height: 20px;
                 width: 592px;
+                margin-bottom: 15px;
             }
             `} </style>
-        </Fragment>
+        </>
     )
 }
 

@@ -6,7 +6,7 @@
         name: 'Olga',
         studio: 'Weave Studios',
         location: 'Kai Tak',
-        id: 1
+        key: 'olga'
     },
     {
         heading: '“The facilities are superb. Clean, slick, bright.”',
@@ -15,7 +15,7 @@
         name: 'Thomas',
         studio: 'Weave Studios',
         location: 'Olympic',
-        id: 2
+        key: 'weave'
     },
     {
         heading: '“A real sense of community, nurtured”.',
@@ -24,6 +24,6 @@
         name: 'Elliot',
         studio: 'Weave Studios',
         location: 'Kai Tak',
-        id: 3
+        key: 'kai'
     },
 ]

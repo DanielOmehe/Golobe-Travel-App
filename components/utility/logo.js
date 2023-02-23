@@ -1,11 +1,11 @@
-import { Fragment } from "react"
-
-const LogoComponent = ({children})=>{
+const Logo = ({logo})=>{
     return (
-        <Fragment>
-            {children}
-        </Fragment>
+        <>
+            <div className="logo">
+                <img src={logo} alt='Logo' />
+            </div>
+        </>
     )
 }
 
-export default LogoComponent
+export default Logo
