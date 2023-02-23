@@ -6,7 +6,7 @@ const NewsLetterComponent = ({children})=>{
                 .newsletter{
                     height: 305px;
                     width: 1232px;
-                    left: 88px;
+                    left: 188px;
                     top: -151px;
                     border-radius: 20px;
                     padding: 0px 24px 0px 24px;
