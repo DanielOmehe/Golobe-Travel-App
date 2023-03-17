@@ -40,7 +40,7 @@ const Reviews = ({reviews})=>{
                                             <Text variant='review-heading'> {heading} </Text>
                                             <div className='sub-title'>
                                                 <Text open={state} variant='review-sub-heading'> {subheading} </Text>
-                                                <Text variant='viewmore' key={key} open={state} onclick={onclickhandler} > view more </Text>
+                                                <Text variant='viewmore' open={state} onclick={onclickhandler} > view more </Text>
                                             </div>
                                             <div className='more-reviews'>
                                                 <div className='stars'>
