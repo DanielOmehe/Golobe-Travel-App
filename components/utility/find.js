@@ -1,4 +1,4 @@
-const Find = ({children})=>{
+const Route = ({children})=>{
     return(
         <>
             <div className="find" > {children} </div>
@@ -16,4 +16,4 @@ const Find = ({children})=>{
     )
 }
 
-export default Find
+export default Route

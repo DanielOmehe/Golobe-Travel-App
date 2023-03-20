@@ -1,9 +1,9 @@
-import Frame from "./frame"
-import Link from "./link"
-import Links from './links'
-import Button from "../utility/button"
-import Find from '../utility/find'
-import Logo from '../utility/logo'
+import Frame from "./frame";
+import Link from "./link";
+import Links from './links';
+import Button from "../utility/button";
+import Route from '../utility/find';
+import Logo from '../utility/logo';
 
 const NavBar = ({variant})=>{
     return(
@@ -11,14 +11,14 @@ const NavBar = ({variant})=>{
             <nav className={variant}> 
                 <Frame variant='frame'>
                     <Links>
-                        <Find>
+                        <Route>
                             <img src="/images/airplane.svg" alt="airplane" />
                             <Link variant='listItem' url='/flights'>Find flights</Link>           
-                        </Find>
-                        <Find>
+                        </Route>
+                        <Route>
                             <img src="/images/bed.svg" alt="bed" />
-                            <Link variant='listItem' url='/flights'>Find Stays</Link>           
-                        </Find>
+                            <Link variant='listItem' url='/hotels'>Find Stays</Link>           
+                        </Route>
                     </Links>
                     <Logo logo='/images/navbarLogo.png' alt='navbarlogo'/>             
                 </Frame>

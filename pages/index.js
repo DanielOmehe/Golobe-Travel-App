@@ -11,7 +11,8 @@ import { reviews } from '../components/data/reviews'
 import Footer from '../components/footer'
 import Newsletter from '../components/footer/newsletter/index'
 import Navigations from '../components/footer/navigations'
-import Logo from "../components/footer/logo"
+import Logo from "../components/footer/logo";
+import Review from "../components/landing-page/main/review"
 
 const LandingPage = ()=>{
     return(
@@ -24,7 +25,9 @@ const LandingPage = ()=>{
                 <FlightPlan variant='landing-page-flight-plan'/>
                 <Places />
                 <Booking bookings={bookings} />
-                <Reviews reviews={reviews} />
+                <Reviews>
+                    
+                </Reviews>
             </Main>
             <Footer>
                 <Newsletter />
