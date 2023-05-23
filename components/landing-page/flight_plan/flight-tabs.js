@@ -1,6 +1,6 @@
 import { Children, useState } from "react";
-import Text from "../utility/text";
-import { tabs } from "../data/tabs";
+import Text from "../../utility/text";
+import { tabs } from "../../data/tabs";
 
 const FlightTab = ({variant, children})=>{
     const [activeTab, setactiveTab] = useState(tabs[0].key)

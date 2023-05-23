@@ -1,5 +1,5 @@
-import Frame from "./frame";
-import Link from "./link";
+import Frame from "../frame";
+import Link from "../link/link";
 import Links from './links';
 import Button from "../utility/button";
 import Route from '../utility/find';
