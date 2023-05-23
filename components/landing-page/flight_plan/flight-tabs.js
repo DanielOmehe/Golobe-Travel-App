@@ -1,5 +1,5 @@
 import { Children, useState } from "react";
-import Text from "../../utility/text";
+import Text from "../../former-data/utility/text";
 import { tabs } from "../../data/tabs";
 
 const FlightTab = ({variant, children})=>{
