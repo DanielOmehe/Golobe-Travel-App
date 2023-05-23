@@ -1,6 +1,6 @@
-import Header from "../components/header"
-import NavBar from "../components/header/navbar"
-import Banner from "../components/header/banner"
+import { Header } from '../layout'
+import { NavBar } from '../layout'
+import { Banner } from '../layout'
 import FlightPlan from "../components/flight_plan"
 import Main from "../components/landing-page/main"
 import Places from "../components/landing-page/main/places"
@@ -8,7 +8,7 @@ import Booking from "../components/landing-page/main/booking"
 import Reviews from '../components/landing-page/main/reviews';
 import { bookings } from "../components/data/booking"
 import { reviews } from '../components/data/reviews'
-import Footer from '../components/footer'
+import { Footer } from '../layout'
 import Newsletter from '../components/footer/newsletter/index'
 import Navigations from '../components/footer/navigations'
 import Logo from "../components/footer/logo";

@@ -1,4 +1,4 @@
-import Text from "../utility/text"
+import Text from '../utility/text';
 
 const Banner = ({})=>{
     return(
