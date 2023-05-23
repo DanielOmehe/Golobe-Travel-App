@@ -1,40 +1,9 @@
-import { Header } from '../layout'
-import { NavBar } from '../layout'
-import { Banner } from '../layout'
-import FlightPlan from "../components/flight_plan"
-import Main from "../components/landing-page/main"
-import Places from "../components/landing-page/main/places"
-import Booking from "../components/landing-page/main/booking"
-import Reviews from '../components/landing-page/main/reviews';
-import { bookings } from "../components/data/booking"
-import { reviews } from '../components/data/reviews'
-import { Footer } from '../layout'
-import Newsletter from '../components/footer/newsletter/index'
-import Navigations from '../components/footer/navigations'
-import Logo from "../components/footer/logo";
-import Review from "../components/landing-page/main/review"
+import Header from "../layout/header"
 
 const LandingPage = ()=>{
     return(
         <>
-            <Header variant='landing-page-header'>
-                <NavBar variant='landing-page-navbar'/>
-                <Banner />
-            </Header>
-            <Main variant='landing-page-main'>
-                <FlightPlan variant='landing-page-flight-plan'/>
-                <Places />
-                <Booking bookings={bookings} />
-                <Reviews>
-                    
-                </Reviews>
-            </Main>
-            <Footer>
-                <Newsletter />
-                <Navigations>
-                    <Logo />
-                </Navigations>
-            </Footer>
+        <Header />
         </>
     )
 }
