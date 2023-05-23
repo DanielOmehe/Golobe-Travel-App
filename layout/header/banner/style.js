@@ -26,3 +26,4 @@ export const BannerWrapper = styled.section`
         font-size: 20px;
     }
 `
+
