@@ -6,4 +6,8 @@ export const Button = styled.button`
     bachground: #0da2ff;
     border: none;
     outline: none;
+
+    a{
+        color: black;
+    }
 `
