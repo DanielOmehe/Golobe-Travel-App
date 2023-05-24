@@ -4,10 +4,7 @@ export const TravelPlanWrapper = styled.div`
     width: 1200px;
     height: 300px;
     background: #fff;
-    margin: 0 auto;
-    position: absolute;
-    top: 85%;
-    left: 10rem;
+    margin: -7rem auto 5rem;
     border-radius: 16px;
     padding: 16px 32px 32px 32px;
     box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
@@ -29,7 +26,6 @@ export const TravelPlanNavItems = styled.ul`
 `
 
 export const TravelPlanNavItem = styled.li`
-    width: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -39,7 +35,7 @@ export const TravelPlanNavItem = styled.li`
 
 export const VerticalLine = styled.div`
     width: 2px;
-    height: 50px;
+    height: 45px;
     background: #D7E2EE;
     position absolute;
     top: -15px;
@@ -51,9 +47,9 @@ export const HorizontalLine = styled.div`
     height: 5px;
     background: #8DD3BB;
     position: absolute;
-    top: 2.5rem;
-    left: ${props => `${props.left}px` || 0};
-    transition: all .5s linear;
+    top: 2rem;
+    left: ${props => props.slide ? '10%' : '0'};
+    transition: all .3s linear;
 `
 
 export const TabIcon = styled.img`
@@ -82,7 +78,7 @@ export const TravelInputGroup = styled.div`
 `
 
 export const TravelSelect = styled.select`
-    width: 140px;
+    width: ${props => props.width || '140px'};
     height: 50px;
     padding: 0 10px;
     border: 1px solid #000;
