@@ -1,8 +1,8 @@
-
-const Button = ({ color, bgColor , children })=>{
+import { Button } from "./style"
+const Buttons = ({ children })=>{
     return(
-            <button> {children} </button>
+        <Button background='#3EB489' color="#fff"> {children} </Button>
     )
 }
 
-export default Button
+export default Buttons
