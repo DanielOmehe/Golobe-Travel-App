@@ -1,14 +1,15 @@
-import Header from "../layout/header";
-import { FlightPlan } from "../components/landing-page";
-import LandingContext from "../context/landing-page";
+import Header from "../layout/header"
+import { FlightPlan } from '../components/landing-page';
+import SectionTitle from "../components/utility/section_title";
 
-const LandingPage = () => {
-  return (
-    <LandingContext>
-      <Header />
-      <FlightPlan />
-    </LandingContext>
-  );
-};
+const LandingPage = ()=>{
+    return(
+        <>
+        <Header />
+        <FlightPlan />
+        <SectionTitle/>
+        </>
+    )
+}
 
 export default LandingPage;
