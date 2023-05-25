@@ -1,13 +1,13 @@
 import { Button } from "../style"
-import { Title, sectionWrapper, Text } from "./style"
+import { Title, SectionWrapper, Text } from "./style"
 
 const SectionTitle = () => {
   return (
-    <sectionWrapper>
+    <SectionWrapper>
       <Title>Plan Your Perfect Trip</Title>
       <Text>Search Flights & Places Hire to our most popular destinations</Text>
       <Button>See more Places</Button>
-    </sectionWrapper>
+    </SectionWrapper>
   )
 }
 

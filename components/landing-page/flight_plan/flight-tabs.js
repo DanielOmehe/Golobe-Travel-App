@@ -1,63 +1,52 @@
-import { Children, useState } from "react";
-import Text from "../../former-data/utility/text";
-import { tabs } from "../../data/tabs";
+import {
+  TabIcon,
+  TravelInput,
+  TravelInputGroup,
+  TravelLabel,
+  TravelOption,
+  TravelSelect,
+  TravelPlanTab,
+  TravelPlanTabTop,
+  TravelPlanTabBottom
+} from "./style";
+import { Button } from "../../utility/style";
 
-const FlightTab = ({variant, children})=>{
-    const [activeTab, setactiveTab] = useState(tabs[0].key)
-    return (
-        <>
-            <div className={variant}>
-                <ul className="listItems">
-                    {
-                        tabs.map(({tab, image ,key})=>{
-                            return(
-                                <li key={key} className={activeTab === key ? "active" : ''} onClick={()=>setactiveTab(key)}>
-                                    <img src={image} alt='icon' />
-                                    <Text variant='tab'>{tab}</Text>
-                                </li>
-                            )        
-                        })
-                    }
-                </ul>
-                <div className="flight-content">
-                    {
-                        Children.map(children, (child) =>(
-                            child.props.title === activeTab ? child : null
-                        ))
-                    }
-                </div>
-            </div>
-            <style jsx>{`
-                    .listItems{
-                        height: 48px;
-                        width: 210px;                        
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        margin-bottom: 45px;
-                    }
-                    li{
-                        flex: 1;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        list-style-type: none;
-                        height: 100%;
-                        cursor: pointer;
-                    }
-                    li:first-child{ 
-                        padding-right: 20px;
-                    }
-                    li:last-child{
-                        padding-left: 20px;
-                        border-left: 1px solid grey;
-                    }
-                    .active{
-                        border-bottom: 3px solid #8DD3BB;
-                    }
-            `}</style>
-        </>
-    )
-}
+const FlightTab = () => {
+  return (
+    <TravelPlanTab>
+      <TravelPlanTabTop>
+        <TravelInputGroup>
+          <TravelLabel>from - to</TravelLabel>
+          <TravelInput type="text" placeholder="Enter Destination" />
+        </TravelInputGroup>
+        <TravelInputGroup>
+          <TravelLabel>Trip</TravelLabel>
+          <TravelSelect>
+            <TravelOption>return</TravelOption>
+            <TravelOption>return</TravelOption>
+          </TravelSelect>
+        </TravelInputGroup>
+        <TravelInputGroup>
+          <TravelLabel>Depart - return</TravelLabel>
+          <TravelInput type="text" placeholder="Enter departure time" />
+        </TravelInputGroup>
+        <TravelInputGroup>
+          <TravelLabel>Passenger - class</TravelLabel>
+          <TravelInput type="text" placeholder="Enter flight class" />
+        </TravelInputGroup>
+      </TravelPlanTabTop>
+      <TravelPlanTabBottom>
+        <Button color="#000">
+          <TabIcon src="images/plus.svg" />
+          <p>Add Promo code</p>
+        </Button>
+        <Button background="#8DD3BB" color="#000">
+          <TabIcon src="images/plane.svg" />
+          <p>Show Flights</p>
+        </Button>
+      </TravelPlanTabBottom>
+    </TravelPlanTab>
+  );
+};
 
-export default FlightTab
+export default FlightTab;
