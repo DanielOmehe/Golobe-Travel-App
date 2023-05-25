@@ -1,12 +1,14 @@
 import { Button } from "../style"
-import { Title, SectionWrapper, Text } from "./style"
+import { TextWrapper, Title, SectionWrapper, Text } from "./style"
 
 const SectionTitle = () => {
   return (
     <SectionWrapper>
-      <Title>Plan Your Perfect Trip</Title>
-      <Text>Search Flights & Places Hire to our most popular destinations</Text>
-      <Button>See more Places</Button>
+      <TextWrapper>
+        <Title>Plan Your Perfect Trip</Title>
+        <Text>Search Flights & Places Hire to our most popular destinations</Text>
+      </TextWrapper>
+      <Button color="#8DD3BB" border="#8DD3BB">See more Places</Button>
     </SectionWrapper>
   )
 }
