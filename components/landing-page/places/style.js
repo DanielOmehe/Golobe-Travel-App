@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const PlacesWrapper = styled.div`
-    width: 90%;
+    width: 80%;
     margin:auto;
     display: grid;
     gap:32px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    color:#112211;
+    color: #112211;
 `
 export const PlacesFlex = styled.div`
     display: flex;
