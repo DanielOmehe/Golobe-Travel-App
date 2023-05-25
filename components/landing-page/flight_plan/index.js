@@ -26,7 +26,6 @@ import TravelTab from "./traveltab";
 
 const TravelPlan = () => {
   const { slide, switchTab } = useContext(LandingPageContext);
-  console.log(slide);
   return (
     <TravelPlanWrapper>
       <TravelPlanTabNav>

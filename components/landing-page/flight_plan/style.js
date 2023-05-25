@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TravelPlanWrapper = styled.div`
-    width: 1200px;
+    width: 80%;
     height: 300px;
     background: #fff;
     margin: -7rem auto 5rem;

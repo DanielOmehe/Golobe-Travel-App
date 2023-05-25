@@ -1,4 +1,4 @@
-export const bookings = [
+export const booking = [
     {
         image: '/images/flight.png',
         title: 'Flights',
