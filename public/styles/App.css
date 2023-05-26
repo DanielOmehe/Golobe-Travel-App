@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap');
 
+:root{
+    --mint-green: #8dd3bb;
+    --black: black;
+}
+
 *{
     margin: 0;
     padding: 0;
