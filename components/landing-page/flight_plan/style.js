@@ -31,6 +31,11 @@ export const TravelPlanNavItem = styled.li`
     justify-content: flex-start;
     gap: 10px;
     cursor: pointer;
+    padding: 0 20px 1rem;
+    color: ${props => props.switchTab ? 'var(--mint-green)': 'black'};
+    border-bottom: ${props => props.switchTab ? '3px solid var(--mint-green)' : 'none'};
+    border-bottom-width: ${props => props.switchTab ? '100%' : '0'};
+    transition: all .2s ease;
 `
 
 export const VerticalLine = styled.div`
@@ -39,17 +44,7 @@ export const VerticalLine = styled.div`
     background: #D7E2EE;
     position absolute;
     top: -15px;
-    left: 7rem;
-`
-
-export const HorizontalLine = styled.div`
-    width: 100px;
-    height: 5px;
-    background: #8DD3BB;
-    position: absolute;
-    top: 2rem;
-    left: ${props => props.slide ? '10%' : '0'};
-    transition: all .3s linear;
+    left: 9rem;
 `
 
 export const TabIcon = styled.img`

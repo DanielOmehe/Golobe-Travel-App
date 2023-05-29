@@ -4,17 +4,11 @@ export const LandingPageContext = createContext(null);
 
 const LandingContext = ({ children }) => {
   const [activeTab, setActiveTab] = useState(0);
-  const [slide, setSlide] = useState(false)
-  const switchTab =(id, e)=>{
+  const switchTab =(id)=>{
     setActiveTab(id)
-    if(id > 0){
-      setSlide(true)
-    }else{
-      setSlide(false)
-    }
   }
   return (
-    <LandingPageContext.Provider value={{ activeTab, slide, switchTab }}>
+    <LandingPageContext.Provider value={{ activeTab, switchTab }}>
       {children}
     </LandingPageContext.Provider>
   );
