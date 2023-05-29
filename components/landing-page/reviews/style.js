@@ -14,7 +14,7 @@ export const ReviewWrapper = styled.section`
 `
 export const Review = styled.div`
     width: 425px;
-    height: 584px;
+    height: 560px;
     background: #FFFFFF;
     color: #112211;
     box-shadow: 2px 4px 16px rgba(17, 34, 17, 0.1);
@@ -41,9 +41,11 @@ export const ReviewTitle = styled.p`
     font-size: 24px;
     margin-bottom: 32px;
 `
-export const ReviewSub = styled.p`
+export const ReviewSub = styled.div`
     font-weight: 500;
     opacity: 0.5;
+`
+export const TextShorten = styled.p`
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -56,9 +58,15 @@ export const ReviewButton = styled.button`
     background-color:transparent;
     display:block;
     margin-left:auto;
+    cursor:pointer;
+`
+export const ReviewStars = styled.div`
+    display: flex;
+    gap: 10px;
 `
 export const ReviewName = styled.p`
     margin-top: 10px;
+    font-weight: 700;
 `
 export const ReviewStudio = styled.p`
     opacity: 0.5;
