@@ -1,6 +1,7 @@
 import Header from "../layout/header";
 import { FlightPlan, Places, Banners, Reviews } from "../components/landing-page";
 import LandingContext from "../context/landing-page";
+import { Footer } from "../layout";
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Places />
       <Banners />
       <Reviews />
+      <Footer />
     </LandingContext>
   );
 };
