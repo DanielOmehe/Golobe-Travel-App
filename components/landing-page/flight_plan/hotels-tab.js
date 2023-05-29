@@ -22,15 +22,15 @@ const HotelTab =()=>{
           </TravelInputGroup>
           <TravelInputGroup>
             <TravelLabel>Check in</TravelLabel>
-            <TravelInput type="date" width='230px' />
+            <TravelInput type="date" width='250px' />
           </TravelInputGroup>
           <TravelInputGroup>
             <TravelLabel>Chcek out</TravelLabel>
-            <TravelInput type="date" width='230px' placeholder="Enter departure time" />
+            <TravelInput type="date" width='250px' placeholder="Enter departure time" />
           </TravelInputGroup>
           <TravelInputGroup>
             <TravelLabel>Room & Guests</TravelLabel>
-            <TravelSelect width="230px">
+            <TravelSelect width="250px">
                 <TravelOption>something</TravelOption>
                 <TravelOption>something</TravelOption>
                 <TravelOption>something</TravelOption>

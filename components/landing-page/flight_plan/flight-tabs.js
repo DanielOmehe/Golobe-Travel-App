@@ -17,7 +17,7 @@ const FlightTab = () => {
       <TravelPlanTabTop>
         <TravelInputGroup>
           <TravelLabel>from - to</TravelLabel>
-          <TravelInput type="text" placeholder="Enter Destination" />
+          <TravelInput type="text" placeholder="Enter Destination" width='320px' />
         </TravelInputGroup>
         <TravelInputGroup>
           <TravelLabel>Trip</TravelLabel>
@@ -28,11 +28,11 @@ const FlightTab = () => {
         </TravelInputGroup>
         <TravelInputGroup>
           <TravelLabel>Depart - return</TravelLabel>
-          <TravelInput type="text" placeholder="Enter departure time" />
+          <TravelInput type="text" placeholder="Enter departure time" width='320px' />
         </TravelInputGroup>
         <TravelInputGroup>
           <TravelLabel>Passenger - class</TravelLabel>
-          <TravelInput type="text" placeholder="Enter flight class" />
+          <TravelInput type="text" placeholder="Enter flight class" width='320px' />
         </TravelInputGroup>
       </TravelPlanTabTop>
       <TravelPlanTabBottom>
