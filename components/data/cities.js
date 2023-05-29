@@ -21,36 +21,36 @@ export const cities = [
         city: 'Male',
         image: '/images/male.png',
         country: 'Maldives',
-        id: 1
+        id: 4
     },
     {
         city: 'Paris',
         image: '/images/paris.png',
         country: 'France',
-        id: 2
+        id: 5
     },
     {
         city: 'New York',
         image: '/images/newyork.png',
         country: 'US',
-        id: 3
+        id: 6
     },
     {
         city: 'London',
         image: '/images/london.png',
         country: 'UK',
-        id: 1
+        id: 7
     },
     {
         city: 'Tokyo',
         image: '/images/tokyo.png',
         country: 'Japan',
-        id: 2
+        id: 8
     },
     {
         city: 'Dubai',
         image: '/images/dubai.png',
         country: 'UAE',
-        id: 3
+        id: 9
     },
 ]
