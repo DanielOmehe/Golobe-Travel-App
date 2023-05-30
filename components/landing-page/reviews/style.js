@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const ReviewWrapper = styled.section`
     width: 80%;
+    height: 600px;
     margin: auto;
     display: flex;
     gap: 40px;
     overflow-x: scroll;
+    overflow-y: hidden;
     -ms-overflow-style: none; 
     scrollbar-width: none; 
     &::-webkit-scrollbar {
