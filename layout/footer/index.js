@@ -19,12 +19,12 @@ const Footer =()=>{
                 </FooterItem>
                 {
                     footerItems.map((item, index)=>(
-                        <FooterItem>
+                        <FooterItem key={index}>
                             <FooterItemHeader>{item.heading}</FooterItemHeader>
                             <FooterLinks>
                             {
                                 item.links.map((link, index)=>(
-                                    <FooterLink>
+                                    <FooterLink key={index}>
                                         <Link href={link.target}>{link.name}</Link>
                                     </FooterLink>
                                 ))

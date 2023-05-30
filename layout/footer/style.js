@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const FooterWrapper = styled.footer`
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background: var(--mint-green);
     margin-top: 15rem;
     padding: 10rem 10rem 2rem;
@@ -15,6 +15,8 @@ export const FooterItems = styled.section`
     display: flex;
     justify-content: flex-start;
     gap: 2.5rem;
+    position: absolute; 
+    top: 50%;
 `
 
 export const FooterItemHeader = styled.h2`
