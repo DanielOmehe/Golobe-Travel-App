@@ -25,19 +25,18 @@ import HotelTab from "./hotels-tab";
 import TravelTab from "./traveltab";
 
 const TravelPlan = () => {
-  const { slide, switchTab } = useContext(LandingPageContext);
+  const { activeTab, switchTab } = useContext(LandingPageContext);
   return (
     <TravelPlanWrapper>
       <TravelPlanTabNav>
         <TravelPlanNavItems>
           {tabs.map((tab, index) => (
-            <TravelPlanNavItem onClick={(e) => switchTab(index, e)} key={tab.key}>
+            <TravelPlanNavItem onClick={(e) => switchTab(index, e)} key={tab.key} switchTab={index === activeTab}>
               <TabIcon src={tab.image} />
               <p>{tab.name}</p>
             </TravelPlanNavItem>
           ))}
           <VerticalLine />
-          <HorizontalLine slide={slide} />
         </TravelPlanNavItems>
       </TravelPlanTabNav>
       <TravelTab>

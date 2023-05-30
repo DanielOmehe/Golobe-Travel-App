@@ -18,13 +18,11 @@ export const PlacesFlex = styled.div`
     padding:16px;
 `
 export const PlacesTitle = styled.p`
-    display:block;
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 8px;
 `
 export const PlacesSubTitle = styled.p`
-    display: block;
     font-size: 14px;
     font-weight: 500;
 `
