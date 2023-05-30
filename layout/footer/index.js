@@ -1,10 +1,12 @@
 import { FooterWrapper, FooterItems, FooterItem, FooterLogo, FooterIcons, FooterIcon, FooterItemHeader, FooterLinks, FooterLink } from "./style";
 import { footerItems } from "../../components/data/navigations/navigations";
 import Link from 'next/link'
+import Newsletter from "./newsletter";
 
 const Footer =()=>{
     return(
         <FooterWrapper>
+            <Newsletter/>
             <FooterItems>
                 <FooterItem height='100px'>
                     <FooterLogo src="images/Logo.png" />

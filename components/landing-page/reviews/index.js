@@ -24,7 +24,7 @@ const Reviews = () => {
             {/* mapping through reviews array of object */}
             {
                 reviews.map((review, index) => (
-                    <Review key={review.id}>
+                    <Review key={review.key}>
                         <ReviewTitle>{review.heading}</ReviewTitle>
                         <ReviewSub>
                             {/* Expanding text based on the isExpaneded condition */}

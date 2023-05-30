@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const FooterWrapper = styled.footer`
+    position: relative;
     width: 100%;
     height: 400px;
     background: var(--mint-green);
-    margin-top: 10rem;
+    margin-top: 15rem;
     padding: 10rem 10rem 2rem;
 `
 
