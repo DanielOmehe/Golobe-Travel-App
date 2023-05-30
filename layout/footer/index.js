@@ -2,6 +2,7 @@ import { FooterWrapper, FooterItems, FooterItem, FooterLogo, FooterIcons, Footer
 import { footerItems } from "../../components/data/navigations/navigations";
 import Link from 'next/link'
 import Newsletter from "./newsletter";
+import { icons } from '../../components/data/icons'
 
 const Footer =()=>{
     return(
@@ -11,10 +12,11 @@ const Footer =()=>{
                 <FooterItem height='100px'>
                     <FooterLogo src="images/Logo.png" />
                     <FooterIcons>
-                        <FooterIcon src="images/facebook.svg" />
-                        <FooterIcon src="images/instagram.svg" />
-                        <FooterIcon src="images/twitter.svg" />
-                        <FooterIcon src="images/youtube.svg" />
+                        {
+                            icons.map((item, index)=>(
+                                <FooterIcon key={item.text} src={item.icon} />
+                            ))
+                        }
                     </FooterIcons>
                 </FooterItem>
                 {
@@ -24,7 +26,7 @@ const Footer =()=>{
                             <FooterLinks>
                             {
                                 item.links.map((link, index)=>(
-                                    <FooterLink key={index}>
+                                    <FooterLink key={link.name}>
                                         <Link href={link.target}>{link.name}</Link>
                                     </FooterLink>
                                 ))

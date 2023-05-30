@@ -20,6 +20,7 @@
   "homepage": "https://github.com/DanielOmehe/Golobe-Travel-App#readme",
   "dependencies": {
     "next": "^13.0.7",
+    "nextjs-progressbar": "^0.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.5",
