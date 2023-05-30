@@ -1,17 +1,21 @@
-import Header from "../layout/header";
-import { FlightPlan, Places, Banners, Reviews } from "../components/landing-page";
+import Layout from "../layout";
+import {
+  FlightPlan,
+  Places,
+  Banners,
+  Reviews,
+} from "../components/landing-page";
 import LandingContext from "../context/landing-page";
-import { Footer } from "../layout";
 
 const LandingPage = () => {
   return (
     <LandingContext>
-      <Header />
-      <FlightPlan />
-      <Places />
-      <Banners />
-      <Reviews />
-      <Footer />
+      <Layout>
+        <FlightPlan />
+        <Places />
+        <Banners />
+        <Reviews />
+      </Layout>
     </LandingContext>
   );
 };

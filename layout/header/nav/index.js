@@ -7,16 +7,16 @@ const NavBar =()=>{
     return(
         <NavWrapper>
             <NavRight>
-                <NavLink to='./flight' url='images/airplane.svg'>Find Flights</NavLink>
-                <NavLink to='./hotel' url='images/bed.svg'>Find Hotels</NavLink>
+                <NavLink to='./flights' url='images/airplane.svg'>Find Flights</NavLink>
+                <NavLink to='./hotels' url='images/bed.svg'>Find Hotels</NavLink>
             </NavRight>
             <NavIcon src="images/navbarLogo.png" iconSize='auto' />
             <NavLeft>
                 <NavButton>
-                    <Link href='login'>login</Link>
+                    <Link href='./login'>login</Link>
                 </NavButton>
                 <NavButton background='#fff' color="#000">
-                    <Link href='login'>Sign up</Link>
+                    <Link href='./sign-up'>Sign up</Link>
                 </NavButton>
             </NavLeft>
         </NavWrapper>
