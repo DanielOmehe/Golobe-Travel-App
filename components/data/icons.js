@@ -1,6 +1,6 @@
 export const icons = [
-    {icon: '/images/facebook.svg', text: 'facebook'},
-    {icon: '/images/instagram.svg', text: 'instagram'},
-    {icon: '/images/twitter.svg', text: 'twitter'},
-    {icon: '/images/youtube.svg', text: 'youtube'}
+    {icon: '/images/svgs/facebook.svg', text: 'facebook'},
+    {icon: '/images/svgs/instagram.svg', text: 'instagram'},
+    {icon: '/images/svgs/twitter.svg', text: 'twitter'},
+    {icon: '/images/svgs/youtube.svg', text: 'youtube'}
 ]
