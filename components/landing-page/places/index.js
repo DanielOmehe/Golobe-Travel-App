@@ -7,9 +7,9 @@ const Places = () => {
   return (
     <>
         <SectionTitle
-        title='Plan Your Perfect Trip'
-        text='Search Flights & Places Hire to our most popular destinations'
-        btnText='See more Places'
+        title='Plan your perfect trip'
+        text='Search Flights & Places Hire to our most popular destinations.'
+        btnText='See more places'
         />
         <PlacesWrapper>
         {
