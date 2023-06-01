@@ -1,15 +1,15 @@
-import { Header, Banner, NavBar, Footer } from "../layout";
-import { Overlay } from "../components/utility";
-import { FlightContext } from "../context";
+import { Header, Banner, NavBar, Footer } from "../../layout";
+import { Overlay } from "../../components/utility";
+import { HotelContext } from "../../context";
 
 const Flights = () => {
   return (
-    <FlightContext>
+    <HotelContext>
       <Header>
         <NavBar
           background="white"
           text='black'
-          logo="images/logo.svg"
+          logo="images/svgs/logo.svg"
           icons={[
             {
               target: "./flights",
@@ -25,19 +25,19 @@ const Flights = () => {
             },
           ]}
         />
-        <Banner image="images/flights.jpg">
+        <Banner image="images/resort.jpg" position="80% 50%">
           <Overlay
             size="4rem"
-            align="left"
             right="50rem"
+            align="left"
             heading="Make you travel wishlist, we'll do the rest"
             subTitle="Special offers to fit your plan"
           />
         </Banner>
       </Header>
-      <h1> This is the flights page </h1>
+      <h1> This is the hotels page </h1>
       <Footer />
-    </FlightContext>
+    </HotelContext>
   );
 };
 
