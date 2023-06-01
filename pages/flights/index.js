@@ -39,7 +39,7 @@ const Flights = () => {
           />
         </Banner>
       </Header>
-      <FlightPlan />
+      {/* <FlightPlan /> */}
       <Places />
       <Locations />
       <Explore />
