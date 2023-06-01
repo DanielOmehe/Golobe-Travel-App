@@ -65,7 +65,7 @@ export const TravelPlanTab = styled.div`
 `
 
 export const TravelInputGroup = styled.div`
-    width: auto;
+    width: ${props => props.width || 'auto'};
     height: auto;
     display: flex;
     flex-direction: column;
@@ -115,6 +115,7 @@ export const TravelPlanTabTop = styled.div`
     width: 100%;
     height: 60px;
     display: flex;
+    justify-content: space-between;
     gap: 30px;
 `
 

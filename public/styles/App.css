@@ -15,4 +15,5 @@
 html, body{
     width: 100%;
     background: #FAFBFC;
+    overflow-x: hidden;
 }
