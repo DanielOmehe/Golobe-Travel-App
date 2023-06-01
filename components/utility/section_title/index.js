@@ -3,7 +3,7 @@ import { TextWrapper, Title, SectionWrapper, Text } from "./style"
 
 const SectionTitle = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper top='15rem'>
       <TextWrapper>
         <Title>Plan Your Perfect Trip</Title>
         <Text>Search Flights & Places Hire to our most popular destinations</Text>

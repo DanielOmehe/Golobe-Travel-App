@@ -9,7 +9,7 @@ export const NavLinkWrapper = styled.div`
 
     & a{
         text-decoration: none;
-        color: #fff;
+        color: ${props => props.color || 'none'};
     }
 `
 

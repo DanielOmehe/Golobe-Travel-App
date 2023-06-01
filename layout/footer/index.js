@@ -21,7 +21,7 @@ const Footer =()=>{
                 </FooterItem>
                 {
                     footerItems.map((item, index)=>(
-                        <FooterItem key={index}>
+                        <FooterItem key={item.heading}>
                             <FooterItemHeader>{item.heading}</FooterItemHeader>
                             <FooterLinks>
                             {

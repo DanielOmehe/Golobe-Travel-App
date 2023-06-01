@@ -4,8 +4,8 @@ export const SectionWrapper = styled.div`
     display: flex;
     align-items: center;
     width: 80%;
-    margin:auto;
-    margin-bottom:40px;
+    margin: 0 auto 40px;
+    margin-top: ${props => props.top || '0'};
 `
 export const TextWrapper = styled.div`
     display: flex;
