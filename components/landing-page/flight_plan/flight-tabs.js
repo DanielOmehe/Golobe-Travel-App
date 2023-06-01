@@ -21,7 +21,7 @@ const FlightTab = () => {
         </TravelInputGroup>
         <TravelInputGroup>
           <TravelLabel>Trip</TravelLabel>
-          <TravelSelect>
+          <TravelSelect width='150px'>
             <TravelOption>return</TravelOption>
             <TravelOption>return</TravelOption>
           </TravelSelect>

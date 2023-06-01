@@ -1,14 +1,10 @@
-import NavBar from "./nav"
 import { HeaderWrapper } from "./style"
-import  Banner  from "./banner"
 
-
-const Header = ({variant, children})=>{
+const Header = ({children})=>{
     return(
         <>
             <HeaderWrapper>
-                <NavBar />
-                <Banner/>
+                {children}
             </HeaderWrapper>
         </>
     )

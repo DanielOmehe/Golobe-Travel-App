@@ -1,14 +1,4 @@
-import Header from "./header";
-import Footer from "./footer";
-
-const Layout =({children})=>{
-    return(
-        <>
-            <Header />
-            <main>{children}</main>
-            <Footer />
-        </>
-    )
-}
-
-export default Layout
+export { default as Header } from './header';
+export { default as Footer } from './footer';
+export { default as Banner } from './header/banner';
+export { default as NavBar } from './header/nav';

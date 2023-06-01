@@ -4,10 +4,14 @@ export const TravelPlanWrapper = styled.div`
     width: 80%;
     height: 300px;
     background: #fff;
-    margin: -7rem auto 5rem;
-    border-radius: 16px;
     padding: 16px 32px 32px 32px;
     box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
+    position: absolute;
+    top: 85%;
+    left: 10rem;
+    z-index: 2;
+    border-radius: 16px;
+    margin-bottom: 25rem;
 `
 
 export const TravelPlanTabNav = styled.div`

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const PlacesWrapper = styled.div`
     width: 80%;
-    margin:auto;
+    margin: auto;
     display: grid;
     gap:32px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
