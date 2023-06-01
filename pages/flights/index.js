@@ -14,14 +14,14 @@ const Flights = () => {
             {
               target: "./flights",
               key: "flight",
-              url: "images/flight.svg",
+              url: "images/svgs/flight.svg",
               text: "Find Flights",
             },
             {
               target: "./hotels",
               text: "Find Stays",
               key: "hotel",
-              url: "images/stay.svg",
+              url: "images/svgs/stay.svg",
             },
           ]}
         />

@@ -19,14 +19,14 @@ const LandingPage = () => {
             {
               target: "./flights",
               key: "flight",
-              url: "images/airplane.svg",
+              url: "images/svgs/airplane.svg",
               text: "Find Flights",
             },
             {
               target: "./hotels",
               text: "Find Stays",
               key: "hotel",
-              url: "images/bed.svg",
+              url: "images/svgs/bed.svg",
             },
           ]}
         />
