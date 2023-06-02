@@ -19,7 +19,14 @@ export const TravelPlanTabNav = styled.div`
     height: 100px;
     padding: 20px 0;
 `
+export const Header = styled.h3`
+    width: 100%;
+    padding: 20px 0;
+    font-weight: 600;
+    text-align: left;
+    font-size: 24px;
 
+`
 export const TravelPlanNavItems = styled.ul`
     width: 100%;
     display: flex;

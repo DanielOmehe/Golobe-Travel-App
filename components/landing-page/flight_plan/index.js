@@ -19,7 +19,7 @@ import {
 } from "./style";
 import { tabs } from "../../data/tabs";
 import { useContext } from "react";
-import { LandingPageContext } from "../../../context/landing-page";
+import { LandingPageContext } from "../../../context/landing-page"
 import FlightTab from "./flight-tabs";
 import HotelTab from "./hotels-tab";
 import TravelTab from "./traveltab";

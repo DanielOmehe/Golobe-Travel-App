@@ -1,6 +1,10 @@
 import { Header, Banner, NavBar, Footer } from "../../layout";
 import { Overlay } from "../../components/utility";
 import { FlightContext } from "../../context";
+import Explore from "../../components/flight-page/locations/explore";
+import Locations from "../../components/flight-page/locations";
+import Places from "../../components/flight-page/places";
+import { FlightPlan } from "../../components/flight-page";
 
 const Flights = () => {
   return (
@@ -31,13 +35,16 @@ const Flights = () => {
             size="4rem"
             align="left"
             right="50rem"
-            heading="Make you travel wishlist, we'll do the rest"
+            heading="Make your travel wishlist, we'll do the rest"
             subTitle="Special offers to fit your plan"
           />
         </Banner>
       </Header>
-      <h1> This is the flights page </h1>
-      <Footer logo='images/Logo.png' />
+      <FlightPlan />
+      <Places />
+      <Locations />
+      <Explore />
+      <Footer />
     </FlightContext>
   );
 };

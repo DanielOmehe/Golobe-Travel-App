@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { ReviewWrapper, Review, ReviewTitle, ReviewSub, TextShorten, ReviewButton, ReviewName, ReviewStudio, ReviewGoogle, ReviewStars } from './style';
 import { reviews } from '../../data/reviews';
-import { TextWrapper, Title, SectionWrapper, Text,  } from '../../utility/section_title/style';
-import { Button } from '../../utility/style';
+import SectionTitle from '../../utility/section_title';
 
 const Reviews = () => {
     // useState to use an object with review ids as keys and booleans as values
@@ -13,13 +12,11 @@ const Reviews = () => {
     };
   return (
     <>
-        <SectionWrapper>
-            <TextWrapper>
-                <Title>Reviews</Title>
-                <Text>What people says about Golobe facilities</Text>
-            </TextWrapper>
-            <Button color="#8DD3BB" border="#8DD3BB">See All</Button>
-        </SectionWrapper>
+        <SectionTitle
+        title='Reviews'
+        text='What people says about Golobe facilities'
+        btnText='See All'
+        />
         <ReviewWrapper>
             {/* mapping through reviews array of object */}
             {
