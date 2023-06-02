@@ -12,7 +12,7 @@ const Newsletter = () => {
                     </Form>
             </InputWrapper>
             <Mailbox>
-                <img src='/images/mailbox.svg' alt='mailbox' />
+                <img src='/images/svgs/mailbox.svg' alt='mailbox' />
             </Mailbox>
         </NewsWrapper>
     )

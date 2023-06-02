@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavWrapper = styled.nav`
     width: 100%;
     height: 100px;
-    padding: 10px 5rem;
+    padding: 10px 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +12,7 @@ export const NavWrapper = styled.nav`
     left: 0;
     z-index: 1;
     background: ${props => props.color ? props.color : 'transparent'};
+    box-shadow: ${props => props.shadow ? `0 0 5px rgba(0,0,0,.56)` : 'none'};
 `
 
 export const NavRight = styled.div`

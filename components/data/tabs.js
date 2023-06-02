@@ -1,4 +1,4 @@
 export const tabs = [
-    {name: 'Flights', image: '/images/flight.svg', key: 'flights'},
-    {name: 'Stays', image: '/images/stay.svg', key: 'hotels'},
+    {name: 'Flights', image: '/images/svgs/flight.svg', key: 'flights'},
+    {name: 'Stays', image: '/images/svgs/stay.svg', key: 'hotels'},
 ];

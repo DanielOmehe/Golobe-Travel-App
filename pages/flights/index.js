@@ -10,6 +10,7 @@ const Flights = () => {
           background="white"
           text='black'
           logo="images/svgs/logo.svg"
+          shadow={true}
           icons={[
             {
               target: "./flights",
@@ -36,7 +37,7 @@ const Flights = () => {
         </Banner>
       </Header>
       <h1> This is the flights page </h1>
-      <Footer />
+      <Footer logo='images/Logo.png' />
     </FlightContext>
   );
 };

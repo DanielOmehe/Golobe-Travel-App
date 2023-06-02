@@ -42,7 +42,7 @@ const LandingPage = () => {
       <Places />
       <Banners />
       <Reviews />
-      <Footer />
+      <Footer logo='images/Logo.png' />
     </LandingContext>
   );
 };

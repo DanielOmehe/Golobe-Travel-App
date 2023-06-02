@@ -3,9 +3,9 @@ import { NavIcon } from "../link/style";
 import { NavButton, NavLeft, NavRight, NavWrapper } from "./style";
 import Link from "next/link";
 
-const NavBar = ({ text, background, logo, icons }) => {
+const NavBar = ({ text, background, logo, icons, shadow }) => {
   return (
-    <NavWrapper color={background}>
+    <NavWrapper color={background} shadow={shadow}>
       <NavRight>
         {icons.map((icon, index) => (
           <NavLink text={text} key={icon.key} to={icon.target} url={icon.url}>
