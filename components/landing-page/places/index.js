@@ -6,7 +6,11 @@ const bookings = ['Flights', 'Hotels', 'Resorts']
 const Places = () => {
   return (
     <>
-        <SectionTitle/>
+        <SectionTitle
+        title='Plan your perfect trip'
+        text='Search Flights & Places Hire to our most popular destinations.'
+        btnText='See more places'
+        />
         <PlacesWrapper>
         {
             cities.map((city)=> (

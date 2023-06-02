@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 export const BannerWrapper = styled.section`
-    width: 100%;
-    padding: 40px 100px;
-    margin: 5rem 0;
+    width: 80%;
+    padding: 40px 0px;
+    margin: 5rem auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 50px;
 `
 
 export const Banner = styled.div`
-    width: 604px;
+    min-width: 604px;
     height: 559px;
     border-radius: 20px;
     background: ${props => props.url ? `url('${props.url}')` : 'none'};
