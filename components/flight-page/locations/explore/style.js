@@ -10,12 +10,12 @@ export const PlacesWrapper = styled.div`
 `
 export const PlacesFlex = styled.div`
     display: flex;
-    flex: 0 1 43%;
-    height: 450px;
+    flex-basis: 45%;
+    height: 485px;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
     align-items: center;
-    gap:10px;
     background: var(--mint-green);
     box-shadow:0px 4px 16px rgba(17, 34, 17, 0.05);
     border-radius: 16px;
@@ -25,10 +25,11 @@ export const PlacesFlex = styled.div`
 export const ExploreGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
-    flex: 0 1 55%;
-    height: 450px;
-    gap:16px;
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+    flex-basis: 55%;
+    gap: 16px;
     background: #fff;
+    height: 485px;
     border-radius: 16px;
 `
 export const GridItem = styled.img`
@@ -64,8 +65,9 @@ export const DetailsBox = styled.div`
     position: relative;
 `
 export const PlacesSubTitle = styled.p`
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+    line-height: 22px;
     color: #000;
 `
 export const FlightBtn = styled.p`
