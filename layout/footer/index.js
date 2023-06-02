@@ -4,13 +4,13 @@ import Link from 'next/link'
 import Newsletter from "./newsletter";
 import { icons } from '../../components/data/icons'
 
-const Footer =()=>{
+const Footer =({logo})=>{
     return(
         <FooterWrapper>
             <Newsletter/>
             <FooterItems>
                 <FooterItem height='100px'>
-                    <FooterLogo src="images/Logo.png" />
+                    <FooterLogo src={logo} />
                     <FooterIcons>
                         {
                             icons.map((item, index)=>(

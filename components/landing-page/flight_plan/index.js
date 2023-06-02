@@ -1,21 +1,10 @@
 import {
   TabIcon,
-  TravelInput,
-  TravelLabel,
   TravelPlanNavItem,
   TravelPlanNavItems,
-  TravelPlanTab,
   TravelPlanTabNav,
-  TravelPlanTabTop,
-  TravelPlanTabWrapper,
   TravelPlanWrapper,
-  TravelInputGroup,
-  TravelSelect,
-  TravelOption,
-  TravelPlanTabBottom,
-  TravelButton,
   VerticalLine,
-  HorizontalLine,
 } from "./style";
 import { tabs } from "../../data/tabs";
 import { useContext } from "react";

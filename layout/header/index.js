@@ -1,9 +1,9 @@
 import { HeaderWrapper } from "./style"
 
-const Header = ({children})=>{
+const Header = ({height, children})=>{
     return(
         <>
-            <HeaderWrapper>
+            <HeaderWrapper height={height}>
                 {children}
             </HeaderWrapper>
         </>

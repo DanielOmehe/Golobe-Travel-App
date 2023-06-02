@@ -37,11 +37,11 @@ const FlightTab = () => {
       </TravelPlanTabTop>
       <TravelPlanTabBottom>
         <Button color="#000">
-          <TabIcon src="images/plus.svg" />
+          <TabIcon src="images/svgs/plus.svg" />
           <p>Add Promo code</p>
         </Button>
         <Button background="#8DD3BB" color="#000">
-          <TabIcon src="images/plane.svg" />
+          <TabIcon src="images/svgs/plane.svg" />
           <p>Show Flights</p>
         </Button>
       </TravelPlanTabBottom>

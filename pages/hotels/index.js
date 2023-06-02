@@ -35,8 +35,7 @@ const Flights = () => {
           />
         </Banner>
       </Header>
-      <h1> This is the hotels page </h1>
-      <Footer />
+      <Footer logo='images/Logo.png' />
     </HotelContext>
   );
 };

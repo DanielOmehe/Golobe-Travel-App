@@ -14,6 +14,7 @@ const Flights = () => {
           background="white"
           text='black'
           logo="images/svgs/logo.svg"
+          shadow={true}
           icons={[
             {
               target: "./flights",
