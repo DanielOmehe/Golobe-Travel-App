@@ -10,6 +10,7 @@ import {
     TravelPlanTabBottom
   } from "./style";
   import { Button } from "../../utility/style";
+  import Link from "next/link";
   
   const FlightTab = () => {
     return (
@@ -40,10 +41,12 @@ import {
             <TabIcon src="images/svgs/plus.svg" />
             <p>Add Promo code</p>
           </Button>
-          <Button background="#8DD3BB" color="#000">
+          <Link href='./details' style={{textDecoration: 'none'}}>
+          <Button background="#8DD3BB" color="#000" >
             <TabIcon src="images/svgs/plane.svg" />
             <p>Show Flights</p>
           </Button>
+          </Link>
         </TravelPlanTabBottom>
       </TravelPlanTab>
     );

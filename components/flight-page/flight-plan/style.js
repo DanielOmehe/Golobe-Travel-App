@@ -8,7 +8,8 @@ export const TravelPlanWrapper = styled.div`
     box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
     position: absolute;
     top: 85%;
-    left: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
     border-radius: 16px;
     margin-bottom: 25rem;

@@ -80,4 +80,5 @@ export const FlightBtn = styled.p`
     background-color: #fff;
     border-radius: 8px;
     z-index: 5;
+    cursor: pointer;
 `
