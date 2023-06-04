@@ -10,6 +10,17 @@ export const BookingDetailsWrapper = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
 `
+export const FlightTermWrapper = styled.div`
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+`
 export const TicketWrapper = styled.div`
     width: 100%;
     height: 360px;
@@ -18,6 +29,7 @@ export const TicketWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 70px;
 `
 export const TicketTime = styled.div`
     flex: 0 1 20%;
@@ -49,6 +61,7 @@ export const TicketRoute = styled.div`
     align-items: center;
     justify-content: flex-start;
     border-radius: 16px;
+    position: relative;
 `
 export const Time = styled.p`
      font-size: 28px;
@@ -76,6 +89,7 @@ export const HeaderContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-bottom: 20px;
 `
 export const FlightCardHeader = styled.div`
     width: 100%;
@@ -101,6 +115,35 @@ export const FCHTitle = styled.h3`
     font-size: 28px;
     font-weight: 600;
 `
+export const Title = styled.h3`
+    font-size: 28px;
+    font-weight: 600;
+    width: 100%;
+    display: block;
+`
+export const Subtitle = styled.h3`
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+`
+export const List = styled.div`
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+`
+export const ListItem = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+`
+
 export const Name = styled.h3`
     font-size: 20px;
     font-weight: 600;
@@ -198,7 +241,6 @@ export const UserDp = styled.img`
  width: 50px;
  height: 50px;
  border-radius: 50%;
-
 `
 export const UserInfo = styled.div`
  width: fit-content;
@@ -246,4 +288,69 @@ object-fit: center;
 position: absolute;
 right: 0;
 bottom: 10px;
+`
+export const RouteIcon = styled.img`
+width: 74%;
+height: 80%;
+object-fit: center;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -53%);
+z-index: 9999;
+`
+export const RouteMap = styled.img`
+width: 100%;
+height: 100%;
+object-fit: center;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+z-index: 1000;
+`
+export const UserCard = styled.div`
+width: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 5px;
+z-index: 9999;
+background-color: #fff;
+box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
+position: absolute;
+left: 10px;
+bottom: 30px;
+border-radius: 8px;
+`
+export const RouteImage = styled.img`
+ width: 50px;
+ height: 50px;
+ border-radius: 8px;
+`
+export const RouteUserInfo = styled.div`
+ width: fit-content;
+ height: 50px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ gap: 10px;
+ padding: 4px 0px;
+`
+export const UserCardDestination = styled.div`
+width: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 5px;
+z-index: 9999;
+background-color: #fff;
+box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
+position: absolute;
+right: 10px;
+top: 20px;
+border-radius: 8px;
 `

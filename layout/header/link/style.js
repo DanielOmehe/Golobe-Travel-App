@@ -6,11 +6,25 @@ export const NavLinkWrapper = styled.div`
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    position: relative;
 
     & a{
         text-decoration: none;
         color: ${props => props.color || 'none'};
     }
+    &:nth-child(1){
+        height: 100px;
+        & ::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 100%;
+            height: 4px;
+            background-color: var(--mint-green);
+            width: 65%;
+        }
+    }
+   
 `
 
 export const NavIcon = styled.img`

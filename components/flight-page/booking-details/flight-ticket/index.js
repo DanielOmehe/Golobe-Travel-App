@@ -1,5 +1,5 @@
 import React from 'react'
-import { TicketWrapper, TicketDetails, TicketRoute, TicketTime, FlightIcons, Time, Destination,Icon, UserSection, UserDetails, UserDp, UserInfo, Name, Pass, TicketInfo, TicketInfoBox, TicketIcon, Code, BarCode} from '../style'
+import { TicketWrapper, TicketDetails, TicketRoute, TicketTime, FlightIcons, Time, Destination,Icon, UserSection, UserDetails, UserDp, UserInfo, Name, Pass, TicketInfo, TicketInfoBox, TicketIcon, Code, BarCode, RouteIcon, RouteMap, UserCard, RouteImage, RouteUserInfo, UserCardDestination} from '../style'
 
 // const ticketInfos= [
 //     {
@@ -70,7 +70,24 @@ const FlightTicket = ({ ticketInfos, time, destination, name, pass, Class, lette
             <BarCode src='images/svgs/barcode.svg'/>
         </TicketInfo>
       </TicketDetails>
-      <TicketRoute></TicketRoute>
+      <TicketRoute>
+                <RouteIcon src='images/svgs/route.svg' />
+                <RouteMap src='images/svgs/routemap.svg' />
+                <UserCard>
+                    <RouteImage src='images/svgs/routeimage.svg'/>
+                    <RouteUserInfo>
+                        <Name style={{fontSize: '12px' }}>{name}</Name>
+                        <Pass style={{fontSize: '9px' }}>{pass}</Pass>
+                </RouteUserInfo>
+                </UserCard>
+                <UserCardDestination>
+                    <RouteImage src='images/svgs/routeimage.svg'/>
+                    <RouteUserInfo>
+                        <Name style={{fontSize: '12px' }}>{name}</Name>
+                        <Pass style={{fontSize: '9px' }}>{pass}</Pass>
+                </RouteUserInfo>
+                </UserCardDestination>
+      </TicketRoute>
     </TicketWrapper>
   )
 }
